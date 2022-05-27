@@ -18989,6 +18989,11 @@ op_db: List[OpInfo] = [
         supports_one_python_scalar=True,
         supports_autograd=False,
     ),
+    UnaryUfuncInfo(
+        'special.bessel_j0',
+        dtypes=all_types_and(torch.bool),
+        supports_autograd=False,
+    ),
 ]
 
 # NOTE [Python References]
