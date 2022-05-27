@@ -18992,6 +18992,7 @@ op_db: List[OpInfo] = [
     UnaryUfuncInfo(
         'special.bessel_j0',
         dtypes=all_types_and(torch.bool),
+        ref=scipy.special.j0 if TEST_SCIPY else _NOTHING,
         supports_autograd=False,
     ),
 ]
